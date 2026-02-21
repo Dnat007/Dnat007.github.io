@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Singh | 3D Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <canvas id="scene-canvas"></canvas>
+  <header class="header glass">
+    <h1>Abhishek Singh</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="project.html">Projects</a>
+      <a href="secondpage.html">Case Study</a>
+      <a href="form.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="chip">AI Engineer • Data Science • MLOps</p>
+        <h2>Completely 3D animated portfolio experience</h2>
+        <p class="muted">Interactive WebGL background, mouse-reactive lighting, animated gradients, floating cards, and smooth motion across all sections.</p>
+        <div class="actions">
+          <a class="btn primary" href="project.html">Explore Projects</a>
+          <a class="btn" href="mailto:a.singh.gla@gmail.com">Hire Me</a>
+        </div>
+      </div>
+      <article class="profile-card tilt">
+        <img src="static/images/profilepic.JPG" alt="Profile image" />
+        <p>Building production-grade AI systems with a focus on reliability, speed, and business impact.</p>
+      </article>
+    </section>
+
+    <section class="grid3">
+      <article class="glass tilt"><h3>3D Computer Vision</h3><p>Deployable visual intelligence pipelines and monitoring.</p></article>
+      <article class="glass tilt"><h3>NLP Systems</h3><p>Transformer-powered automation and multilingual insights.</p></article>
+      <article class="glass tilt"><h3>MLOps Platform</h3><p>Scalable training, CI/CD, observability, and governance.</p></article>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

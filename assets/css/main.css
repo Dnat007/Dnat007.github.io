@@ -1,0 +1,19 @@
+:root{--bg:#050816;--text:#eef2ff;--muted:#b9c4f8;--accent:#7c5cff;--glass:rgba(13,19,40,.62)}
+*{box-sizing:border-box}html,body{margin:0;padding:0;font-family:Inter,sans-serif;color:var(--text);background:radial-gradient(circle at top,#1a2250,#050816 60%);min-height:100%}
+#scene-canvas{position:fixed;inset:0;z-index:-1}
+.container{width:min(1100px,92vw);margin:auto;padding:2rem 0}
+.header{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:1rem 1.2rem;margin:1rem auto;width:min(1100px,92vw);z-index:20}
+.header nav a{color:var(--muted);margin-left:1rem;text-decoration:none}
+.glass{background:var(--glass);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:1.5rem;align-items:center;min-height:78vh}
+.hero h2{font-size:clamp(2rem,4.5vw,3.5rem);margin:.5rem 0}
+.muted{color:var(--muted);line-height:1.7}.chip{display:inline-block;background:#1f2c68;padding:.4rem .8rem;border-radius:999px}
+.actions{margin-top:1.5rem;display:flex;gap:.8rem}.btn{padding:.75rem 1rem;border-radius:10px;border:1px solid rgba(255,255,255,.16);text-decoration:none;color:#fff;display:inline-block}.btn.primary{background:var(--accent);border-color:transparent}
+.profile-card{padding:1rem}.profile-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.grid3 article,.project-card,.long-card,.contact-form{padding:1rem}
+.project-card{text-decoration:none;color:inherit;display:block}.project-card img{width:100%;height:180px;object-fit:cover;border-radius:10px;margin-bottom:.7rem}
+.long-card{max-width:800px;margin:8vh auto}.center-screen{min-height:100vh;display:grid;place-items:center}
+.contact-form{display:grid;gap:.8rem;max-width:560px;margin:6vh auto}.contact-form input,.contact-form textarea{background:#0a1334;border:1px solid rgba(255,255,255,.12);color:#fff;padding:.8rem;border-radius:10px}
+.tilt{transform-style:preserve-3d;transition:transform .25s ease, box-shadow .25s ease}.tilt:hover{box-shadow:0 20px 40px rgba(124,92,255,.3)}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}.header{flex-direction:column;gap:.6rem}}
