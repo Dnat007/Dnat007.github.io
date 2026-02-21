@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Singh | 3D Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <canvas id="scene-canvas"></canvas>
+  <div class="bg-glow"></div>
+
+  <header class="header glass">
+    <h1>Abhishek Singh</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="project.html">Projects</a>
+      <a href="secondpage.html">Case Study</a>
+      <a href="form.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="float3d">
+        <p class="chip">AI Engineer • Data Science • MLOps</p>
+        <h2>Fully 3D portfolio with cinematic motion</h2>
+        <p class="muted">Every page is powered by real-time WebGL, floating geometry clusters, deep parallax starfields, and interactive tilt cards for a complete 3D identity.</p>
+        <div class="actions">
+          <a class="btn primary" href="project.html">Explore Projects</a>
+          <a class="btn" href="mailto:a.singh.gla@gmail.com">Hire Me</a>
+        </div>
+      </div>
+
+      <article class="profile-card tilt glass">
+        <img src="static/images/profilepic.JPG" alt="Profile image" />
+        <p>I build intelligent systems with strong engineering quality and production readiness.</p>
+      </article>
+    </section>
+
+    <section class="grid3">
+      <article class="glass tilt"><h3>3D Vision Systems</h3><p>Visual AI, retrieval, and high-throughput pipelines.</p></article>
+      <article class="glass tilt"><h3>LLM/NLP Workflows</h3><p>Scalable language automation and domain adaptation.</p></article>
+      <article class="glass tilt"><h3>MLOps Runtime</h3><p>Reliable CI/CD + observability + governed model lifecycle.</p></article>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
