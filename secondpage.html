@@ -4,15 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Case Study | 3D Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
   <canvas id="scene-canvas"></canvas>
   <header class="header glass"><h1>Case Study</h1><nav><a href="index.html">Home</a><a href="project.html">Projects</a></nav></header>
   <main class="container">
-    <section class="glass long-card tilt">
+    <section class="glass long-card tilt reveal">
       <h2>AI Pipeline Transformation</h2>
       <p class="muted">Re-architected data ingestion, feature store, model training, and deployment with strong observability and rollback safety.</p>
+      <div class="stats-row">
+        <div class="stat-card glass tilt reveal">
+          <div class="stat-num" data-count="70" data-suffix="%">0%</div>
+          <p>Faster model deployment cycle</p>
+        </div>
+        <div class="stat-card glass tilt reveal">
+          <div class="stat-num" data-count="25" data-suffix="%">0%</div>
+          <p>Accuracy lift via feature engineering</p>
+        </div>
+        <div class="stat-card glass tilt reveal">
+          <div class="stat-num" data-count="99.9" data-suffix="%">0%</div>
+          <p>Uptime with real-time drift alerting</p>
+        </div>
+      </div>
       <ul>
         <li>70% faster model deployment cycle.</li>
         <li>25% accuracy lift via improved feature engineering.</li>
